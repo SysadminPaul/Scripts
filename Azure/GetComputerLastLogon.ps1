@@ -42,7 +42,7 @@
         if ( -not (Get-Module Microsoft.Graph -ListAvailable)) { 
             Write-Host -ForegroundColor Yellow "Microsoft.Graph PowerShell Module not found.  Attempting install..."
             Install-Module Microsoft.Graph -Scope CurrentUser
-            Import-Module Microsoft.Graph.AuditLog
+            Import-Module Microsoft.Graph.Reports
         }
         else {
             Write-Host -ForegroundColor Green "Microsoft.Graph PowerShell Module found.  Loading..."
